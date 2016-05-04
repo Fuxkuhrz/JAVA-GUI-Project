@@ -1,0 +1,15 @@
+class  Ex_JavaReturn{
+	public static void main(String[] args) {
+		Ex_JavaReturn obj = new Ex_JavaReturn();
+		int day = 4;
+		int mount = 12;
+		int year = 2538;
+		int result = BirthFinder(day,mount,year);
+		System.out.println("");
+	}
+	public int BirthFinder(int day, int mount,  int year){
+		int total_day = (2559 - year)*365;
+		int ans_year = total_day / 365;
+		int and_mount = (((total_day/30)) * 21 / 30) / 30;
+	}
+}
